@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Controle financeiro pessoal">
+    <meta name="keywords" content="Fintech,finanças">
+    <meta name="author" content="Samuel Almeida Goulart">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style_global.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+
+    <title>Fintech</title>
+
+</head>
+
+<body>
+    <header></header>
+    <div id="container">
+        <nav></nav>
+        <div>
+            <section id="div-saldo-mes">
+                <div id="div-info">
+                    <span class="text-align-center" id="mes">Abril 2022</span>
+                    <span class="text-align-center" id="text-saldo-mes">Saldo do mês</span>
+                    <span id="saldo-mes">R$ 1.650,50</span>
+                    <div id="div-icone-olho">
+                        <img id="icone_olho" src="./image/olho.svg" alt="Icone de olho">
+                    </div>
+                </div>
+                <div id="div-despesas-orcamento">
+                    <div>
+                        <span>Despesas</span>
+                        <span>R$ 700,00</span>
+                    </div>
+                    <div>
+                        <span>Orçamento do mês</span>
+                        <span>R$ 2.350,00</span>
+                    </div>
+                </div>
+                <div id="div-progress-bar">
+                    <div id="progress-bar" style="--progress: 25;"></div>
+                </div>
+            </section>
+
+            <section id="div-despesas-por-categoria">
+                <span>Despesas por categoria</span>
+                <div>
+                    <div id="div-grafico">
+                        <img src="./image/grafico.svg" alt="Gráfico">
+                    </div>
+                    <div id="div-lista-grafico">
+                        <ul>
+                            <li>Alimentação</li>
+                            <li>Strimmer</li>
+                            <li>Transporte</li>
+                            <li>Água e Luz</li>
+                            <li>Outros</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="div-transacoes-recentes">
+                <span>Transações recentes</span>
+                <div>
+                    <div class="transacoes">
+                        <div>
+                            <img src="./image/entrada_dinheiro.svg" alt="Entrada de dinheiro">
+                        </div>
+                        <div class="div-info-transacoes">
+                            <span class="descricao_transacoes">Adiantamento do salário</span>
+                            <span>20/04/2002</span>
+                            <span>17:55</span>
+                        </div>
+                        <div>
+                            <span class="dinheiro-transacao"  >
+                                + R$ 770,00
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="transacoes">
+                        <div>
+                            <img src="./image/saida_dinheiro.svg" alt="Entrada de dinheiro">
+                        </div>
+                        <div class="div-info-transacoes">
+                            <span class="descricao_transacoes" >Conta de água</span>
+                            <span>18/04/2022</span>
+                            <span>23:59</span>
+                        </div>
+                        <div>
+                            <span class="dinheiro-transacao"  >
+                                - R$ 120,00
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="transacoes">
+                        <div>
+                            <img src="./image/saida_dinheiro.svg" alt="Entrada de dinheiro">
+                        </div>
+                        <div class="div-info-transacoes">
+                            <span class="descricao_transacoes" >Conta de Luz</span>
+                            <span>18/04/2022</span>
+                            <span>23:59</span>
+                        </div>
+                        <div>
+                            <span class="dinheiro-transacao" >
+                                - R$ 160,00
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="transacoes">
+                        <div>
+                            <img src="./image/saida_dinheiro.svg" alt="Entrada de dinheiro">
+                        </div>
+                        <div class="div-info-transacoes">
+                            <span class="descricao_transacoes" >Fatura do cartão de crédito</span>
+                            <span>15/04/2022</span>
+                            <span>23:59</span>
+                        </div>
+                        <div>
+                            <span class="dinheiro-transacao" >
+                                - R$ 1270,00
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="transacoes">
+                        <div>
+                            <img src="./image/entrada_dinheiro.svg" alt="Entrada de dinheiro">
+                        </div>
+                        <div class="div-info-transacoes">
+                            <span class="descricao_transacoes" >Salário</span>
+                            <span>07/04/2022</span>
+                            <span>18:00</span>
+                        </div>
+                        <div>
+                            <span class="dinheiro-transacao" >
+                                - R$ 1570,00
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <button type="button" id="btn-adicionar-transacao" class="btn btn-primary">Adicionar transação</button>
+                </div>
+            </section>
+            <div id="div-planejamento-do-mes"></div>
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
